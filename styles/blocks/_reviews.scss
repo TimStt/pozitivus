@@ -13,31 +13,6 @@
     row-gap: 46px;
   }
 
-  &__slider {
-    --reviewsSliderSlideWidth: 606px;
-
-    @include tablet {
-      --reviewsSliderSlideWidth: 330px;
-    }
-
-    &-list {
-      scroll-behavior: smooth;
-      overflow: hidden;
-
-      @include tablet-above {
-        margin-left: calc(var(--reviewsSliderSlideWidth) / 2 * -1);
-      }
-
-      @include tablet {
-        column-gap: 30px;
-      }
-    }
-
-    &-item {
-      min-width: var(--reviewsSliderSlideWidth);
-    }
-  }
-
   &__actions {
     display: flex;
     justify-content: space-between;
@@ -58,10 +33,10 @@
       color: var(--color-accent);
     }
 
-    &[disabled] {
-      color: var(--color-gray-alt);
-      cursor: not-allowed;
-    }
+    // &[disabled] {
+    //   color: var(--color-gray-alt);
+    //   cursor: not-allowed;
+    // }
 
     svg {
       @include square(20px);

@@ -1,12 +1,25 @@
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 2,
   centeredSlides: true,
 
   spaceBetween: 50,
+  watchOverflow: true,
+  updateOnWindowResize: true,
 
   navigation: {
     nextEl: ".button-next",
     prevEl: ".button-prev",
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: "auto",
+    },
+    1000: {
+      slidesPerView: 2,
+    },
+
+    1400: {
+      slidesPerView: 2,
+    },
   },
 });
 

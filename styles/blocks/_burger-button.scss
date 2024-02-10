@@ -2,8 +2,21 @@
   @include reset-button;
   @include square(48px);
 
-  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
   border-radius: var(--border-radius-small);
+
+  &__line {
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: var(--color-dark);
+    border-radius: 5px;
+  }
 
   @include hover {
     background-color: var(--color-accent);
@@ -12,7 +25,7 @@
   &::after {
     @include abs-center;
 
-    content: '';
+    content: "";
     width: 50%;
     height: 2px;
     background-color: var(--color-dark);
