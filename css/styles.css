@@ -175,7 +175,7 @@ svg * {
   --button-height: 68px;
   --transition-duration: 0.2s;
   --heightBurgerButton: 26px;
-  --widthBurgerButton: 40px;
+  --widthBurgerButton: 37px;
   --headerPaddingTop: 60px;
 }
 @media (max-width: 1280px) {
@@ -700,7 +700,7 @@ h4,
   width: 100dvw;
   height: 100dvh;
   margin: 0;
-
+  right: 0;
   border: none;
   position: fixed;
   height: 100%;
