@@ -1412,6 +1412,7 @@ h4, .h4 {
   flex-direction: column;
   row-gap: 48px;
   max-width: 606px;
+  margin: auto;
 }
 @media (max-width: 767px) {
   .review-card {
